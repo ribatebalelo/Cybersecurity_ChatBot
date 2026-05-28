@@ -8,6 +8,8 @@
 ╚██████╗   ██║   ██████╔╝███████╗██║  ██║    ██████╔╝╚██████╔╝   ██║   
  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝    ╚═╝  
 ```
+<img width="1013" height="199" alt="image" src="https://github.com/user-attachments/assets/03a9366f-1f69-4f88-9502-8320d941967c" />
+
 
 # Cybersecurity Awareness Chatbot
 
