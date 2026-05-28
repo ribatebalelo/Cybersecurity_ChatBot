@@ -8,9 +8,6 @@
 ╚██████╗   ██║   ██████╔╝███████╗██║  ██║    ██████╔╝╚██████╔╝   ██║   
  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚═════╝  ╚═════╝    ╚═╝  
 ```
-<img width="1013" height="199" alt="image" src="https://github.com/user-attachments/assets/03a9366f-1f69-4f88-9502-8320d941967c" />
-
-
 # Cybersecurity Awareness Chatbot
 
 **A dark-themed WinForms desktop chatbot that teaches cybersecurity through conversation.**
@@ -23,6 +20,10 @@ Built with C# · .NET 8 · Windows Forms
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 </div>
+
+# Workflow 
+
+<img width="1013" height="199" alt="image" src="https://github.com/user-attachments/assets/03a9366f-1f69-4f88-9502-8320d941967c" />
 
 ---
 
