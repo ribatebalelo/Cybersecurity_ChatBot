@@ -27,31 +27,6 @@ Built with C# · .NET 8 · Windows Forms
 
 > Dark cyber-themed interface with chat bubbles, a memory bar, quick-topic buttons, and a blinking secure session indicator.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  CYBERSECURITY AWARENESS CHATBOT                    ● SECURE    │
-│  Keyword recognition • Sentiment detection • Memory recall      │
-├─────────────────────────────────────────────────────────────────┤
-│   MEMORY:  Name: Alex  | Interest: phishing                  │
-├──────────────┬──────────────────────────────────────────────────┤
-│ Quick Topics │ password  phishing  scam  privacy  malware  vpn  │
-├──────────────┴──────────────────────────────────────────────────┤
-│                                                                  │
-│   CYBER-BOT                                                    │
-│  ─────────────────────────────────────────────────────          │
-│  Welcome! I'm here to keep you safe online.                      │
-│  What is your name?                                              │
-│                                                                  │
-│                                              YOU               │
-│                                   ─────────────────────         │
-│                                            My name is Alex       │
-│                                                                  │
-├─────────────────────────────────────────────────────────────────┤
-│  Type a message...                              [ SEND ► ]       │
-├─────────────────────────────────────────────────────────────────┤
-│  Response delivered.                         14:32:08 | 28 May  │
-└─────────────────────────────────────────────────────────────────┘
-```
 
 ---
 
@@ -139,17 +114,6 @@ Or open `CybersecurityChatBot.csproj` in Visual Studio 2022 and press **F5**.
 
 The project follows a clean **separation of concerns**— the UI and the logic never import each other.
 
-```
-┌─────────────────────┐        events         ┌──────────────────────┐
-│      MainForm       │ ◄──────────────────── │    ChatbotEngine     │
-│   (UI layer)        │                        │   (logic layer)      │
-│                     │  GetResponse(input)    │                      │
-│  • Bubble painting  │ ──────────────────────►│  • Keyword matching  │
-│  • Scroll system    │                        │  • Sentiment detect  │
-│  • Audio playback   │  OnSentimentDetected   │  • Memory/recall     │
-│  • Memory bar       │ ◄──────────────────── │  • Random responses  │
-│  • Status strip     │  OnMemoryUpdated       │  • Follow-up logic   │
-└─────────────────────┘ ◄──────────────────── └──────────────────────┘
 ```
 
 ### Custom Delegates
