@@ -14,6 +14,7 @@
 **A dark-themed WinForms desktop chatbot that teaches cybersecurity through conversation.**
 Built with C# · .NET 8 · Windows Forms
 
+[![CI](https://github.com/ribatebalelo/CybersecurityChatBot/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/ribatebalelo/CybersecurityChatBot/actions/workflows/dotnet-desktop.yml)
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
@@ -26,7 +27,6 @@ Built with C# · .NET 8 · Windows Forms
 ## Preview
 
 > Dark cyber-themed interface with chat bubbles, a memory bar, quick-topic buttons, and a blinking secure session indicator.
-
 
 ---
 
