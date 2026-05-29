@@ -39,9 +39,9 @@ Built with C# · .NET 8 · Windows Forms
 |---|---|
 | **10 Keyword Topics**| Phishing, passwords, malware, ransomware, VPN, 2FA, privacy, scams, firewalls, data breaches |
 | **Random Responses**| 3–4 unique responses per topic — never the same answer twice |
-| **Memory & Recall**| Remembers your name and favourite topic across the session |
+| **Memory & Recall**| Remembers your name and favourite topic across the session (Balelo, 2025) |
 | **Follow-up Detection**| "Tell me more", "another tip", "go on" — it continues from where it left off |
-| **Sentiment Detection**| Detects worried, confused, frustrated, curious and responds with empathy first |
+| **Sentiment Detection**| Detects worried, confused, frustrated, curious and responds with empathy first (Balelo, 2025) |
 | **Dark Cyber Theme**| Deep navy, electric blue, green accents — custom-painted rounded bubbles |
 | **Audio Feedback**| WAV sounds on greeting, each response, and session close |
 | **Quick Topic Buttons**| One-click buttons to jump straight into any cybersecurity topic |
@@ -70,9 +70,9 @@ CybersecurityChatBot/
 
 ### Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8) or later
-- Windows OS (WinForms is Windows-only)
-- Visual Studio 2022 **or**the .NET CLI
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8) or later (Microsoft, 2024a)
+- Windows OS (WinForms is Windows-only) (Microsoft, 2024b)
+- Visual Studio 2022 **or** the .NET CLI
 
 ### Installation
 
@@ -84,7 +84,7 @@ cd CybersecurityChatBot
 
 **2. Place your audio assets**
 
-Copy your WAV files into one of these locations (the app checks both automatically):
+Copy your WAV files into one of these locations (the app checks both automatically) (Balelo, 2025):
 ```
 bin\Debug\net8.0-windows\assets\   ← preferred (.NET 8 output folder)
 bin\Debug\assets\                  ← also works (legacy location)
@@ -103,7 +103,7 @@ Or open `CybersecurityChatBot.csproj` in Visual Studio 2022 and press **F5**.
 
 | You type... | What happens |
 |---|---|
-| Your name | Bot greets you by name and remembers it |
+| Your name | Bot greets you by name and remembers it (Balelo, 2025) |
 | `phishing` / `what is malware?` | Gets a random tip on that topic |
 | `tell me more` / `another tip` | Continues from the last topic |
 | `I'm worried about scams` | Empathy response + practical tip |
@@ -115,9 +115,7 @@ Or open `CybersecurityChatBot.csproj` in Visual Studio 2022 and press **F5**.
 
 ## Architecture
 
-The project follows a clean **separation of concerns**— the UI and the logic never import each other.
-
-```
+The project follows a clean **separation of concerns** — the UI and the logic never import each other (Balelo, 2025).
 
 ### Custom Delegates
 
@@ -136,7 +134,7 @@ The engine fires these events. The form subscribes — that's the only connectio
 <summary><b>Passwords</b></summary>
 
 - Strong password construction (12+ chars, mixed types)
-- Credential stuffing and why reuse is dangerous
+- Credential stuffing and why reuse is dangerous (Stobert and Biddle, 2014)
 - Password managers (Bitwarden, 1Password, Dashlane)
 - Combining passwords with 2FA
 </details>
@@ -146,7 +144,7 @@ The engine fires these events. The form subscribes — that's the only connectio
 
 - How phishing emails work and what to look for
 - Spear phishing, smishing, and vishing explained
-- Urgency tactics attackers use
+- Urgency tactics attackers use (Anti-Phishing Working Group, 2023)
 - How to verify links and senders safely
 </details>
 
@@ -154,7 +152,7 @@ The engine fires these events. The form subscribes — that's the only connectio
 <summary><b>Malware & Ransomware</b></summary>
 
 - Types of malware: viruses, spyware, trojans, adware
-- The 3-2-1 backup rule against ransomware
+- The 3-2-1 backup rule against ransomware (Cichonski et al., 2012)
 - Safe download sources and antivirus recommendations
 - What to do if you're hit by ransomware
 </details>
@@ -165,7 +163,7 @@ The engine fires these events. The form subscribes — that's the only connectio
 - What a VPN does and when to use one
 - What to look for in a trustworthy VPN
 - Social media privacy settings audit
-- Privacy-focused browsers and search engines
+- Privacy-focused browsers and search engines (Electronic Frontier Foundation, 2023)
 </details>
 
 <details>
@@ -178,12 +176,12 @@ Two-Factor Authentication · Data Breaches · Firewalls · Scams · Safe Browsin
 
 ## Technical Highlights
 
-- **Custom scroll system**— manual `VScrollBar` with a floating "scroll to bottom" button; no AutoScroll quirks
-- **Custom bubble rendering**— rounded corners drawn with `GraphicsPath` and four arc calls; no third-party libraries
-- **Auto-height RichTextBox**— uses `GetPreferredSize` so bubbles grow with the text
-- **Smart asset resolver**— finds audio files in both .NET 8 and legacy output folder layouts
-- **`System.Media.SoundPlayer`**— managed async audio; replaces the old `winmm.dll` P/Invoke from .NET Framework
-- **Blinking status indicator**— `System.Windows.Forms.Timer` at 900 ms for the "● SECURE SESSION" label
+- **Custom scroll system** — manual `VScrollBar` with a floating "scroll to bottom" button; no AutoScroll quirks
+- **Custom bubble rendering** — rounded corners drawn with `GraphicsPath` and four arc calls; no third-party libraries
+- **Auto-height RichTextBox** — uses `GetPreferredSize` so bubbles grow with the text
+- **Smart asset resolver** — finds audio files in both .NET 8 and legacy output folder layouts
+- **`System.Media.SoundPlayer`** — managed async audio; replaces the old `winmm.dll` P/Invoke from .NET Framework (Microsoft, 2024c)
+- **Blinking status indicator** — `System.Windows.Forms.Timer` at 900 ms for the "● SECURE SESSION" label
 
 ---
 
@@ -216,7 +214,27 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details (Balelo, 2025).
+
+---
+
+## References
+
+Anti-Phishing Working Group (APWG) (2023) *Phishing Activity Trends Report, Q4 2023*. Available at: https://apwg.org/trendsreports/ (Accessed: 29 May 2026).
+
+Balelo, R. (2025) *CybersecurityChatBot: A dark-themed WinForms desktop chatbot that teaches cybersecurity through conversation* [Computer software]. Available at: https://github.com/ribatebalelo/CybersecurityChatBot (Accessed: 29 May 2026).
+
+Cichonski, P., Millar, T., Grance, T. and Scarfone, K. (2012) *Computer Security Incident Handling Guide: Recommendations of the National Institute of Standards and Technology*. NIST Special Publication 800-61 Revision 2. Gaithersburg: National Institute of Standards and Technology.
+
+Electronic Frontier Foundation (EFF) (2023) *Surveillance Self-Defence: Tips, Tools and How-tos for Safer Online Communications*. Available at: https://ssd.eff.org (Accessed: 29 May 2026).
+
+Microsoft (2024a) *.NET 8 Documentation*. Available at: https://docs.microsoft.com/en-us/dotnet/ (Accessed: 29 May 2026).
+
+Microsoft (2024b) *Windows Forms Overview*. Available at: https://docs.microsoft.com/en-us/dotnet/desktop/winforms/ (Accessed: 29 May 2026).
+
+Microsoft (2024c) *SoundPlayer Class — System.Media*. Available at: https://docs.microsoft.com/en-us/dotnet/api/system.media.soundplayer (Accessed: 29 May 2026).
+
+Stobert, E. and Biddle, R. (2014) 'The password life cycle: User behaviour in managing passwords', *Proceedings of the 10th Symposium on Usable Privacy and Security (SOUPS 2014)*. Menlo Park: USENIX Association, pp. 243–255.
 
 ---
 
